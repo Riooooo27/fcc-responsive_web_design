@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="logo-container">
+        <img id="header-img" src="https://ph-test-11.slatic.net/p/dc3fa82b1fed69ffb0280af325de16bd.jpg">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#review">Review</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h2>Get any news From Us</h2>
+        <input name="email" type="email" placeholder="Enter Your Email Here" id="email" required>
+        <input id="submit" type="submit" value="Get Started">
+      </form>
+
+      <section id="features">
+        <div class="feature">
+          <img src="data:image/png;base64,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">
+          <div class="desc">
+            <h3>High-Quality Performance</h3>
+            <p>Gan cubes are renowned for their exceptional performance and speed. They are designed with precision engineering, premium materials, and advanced mechanisms, resulting in smooth and effortless turning.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SUQs7zBOkwGFL3dl5uR_lK4GbdYg2ClxFQ&usqp=CAU">
+          <div class="desc">
+            <h3>Customizability</h3>
+            <p>One of the best things about Gan cubes is their customizability. Many models come with unique and innovative features that allow me to fine-tune the cube to match my preferred turning style and speed.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAtOauwqkw7tqt8a8dj4malebP9w48EwSXQ&usqp=CAU">
+          <div class="desc">
+            <h3>Durability and Longevity</h3>
+            <p> Gan cubes are known for their durability and long-lasting performance. The materials used in their construction are of high quality, ensuring that the cube retains its smoothness and stability even after extended use.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="review">
+        <h2>Here is a review for one of our cube:</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/zvFu__jlltU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+
+      <h2 style="font-size: 2rem; margin-bottom: 0;">For sale</h2>
+      <section id="pricing">
+        
+        <div class="cube-price">
+          <img src="https://www.thecubicle.com/cdn/shop/products/GAN356XS_1024x1024@2x.jpg?v=1624388600" alt="GAN 356 XS">
+          <div class="cube-info">
+            <header><h3>GAN 356 XS</h3></header>
+            <p class="cube-review">The GAN 356 XS is the successor to the popular GAN 356 X. This new magnetic flagship 3x3 features multiple innovations in 3x3 design, including an adjustable magnet system, a dual-adjustment tension/compression system, and an all plastic core that significantly reduces the weight of the puzzle. These features put together, the GAN 356 XS stands as one of the lightest, most high-tech modern 3x3's on the market. </p>
+            <p class="price">$39.99</p>
+            <div class="buttons">
+              <button class="buy">BUY NOW</button>
+              <button class="add">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cube-price">
+          <img src="https://www.thecubicle.com/cdn/shop/products/gan356m_1024x1024@2x.jpg?v=1585074302" alt="GAN 356 XS">
+          <div class="cube-info">
+            <header><h3>GAN 356 M</h3></header>
+            <p class="cube-review">The GAN 356 M is a modern, mid-range magnetic 3x3 speed cube by popular manufacturer GAN. This version comes with GAN’s unique hand adjustable Numerical IPG Core and a set of spare GES nuts. Out of the box, the GAN 356 M has a fast, stable feel that is very reminiscent of a mix between the GAN XS and GAN X V2, two of GAN's most famous flagships. The GAN 356 M checks off all the needs speedcubers have for a nice magnetic 3x3, and makes a good cube of choice for cubers who like GAN engineering with a side of simplicity.</p>
+            <p class="price">$39.99</p>
+            <div class="buttons">
+              <button class="buy">BUY NOW</button>
+              <button class="add">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cube-price">
+          <img src="https://www.thecubicle.com/cdn/shop/products/NHPD1YKiNeXhT_1024x1024@2x.jpg?v=1685557194" alt="GAN 356 XS">
+          <div class="cube-info">
+            <header><h3>GAN 356 X V2</h3></header>
+            <p class="cube-review">The GAN 356 X V2 is GAN's newest update to the famous GAN 356 X. This new magnetic 3x3 speed cube is outfitted with a matte exterior and shares the same dual adjustment core as GAN's most recent flagship, the GAN 356 XS. Slightly lighter than its predecessor, the GAN 356 X V2 is a fast and smooth cube with modern, easily adjustable settings.</p>
+            <p class="price">$39.99</p>
+            <div class="buttons">
+              <button class="buy">BUY NOW</button>
+              <button class="add">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button id="more"><a target="_blank" href="https://www.thecubicle.com/collections/gan">More...</a></button>
+    </main>
+
+    <footer>
+      <p>Copyright 2023, The Cubicle</p>
+      <ul>
+        <li><a target="_blank" href="https://thecubicle.helpscoutdocs.com/">Support</a></li>
+        <li><a target="_blank" href="https://www.thecubicle.com/pages/about-us">Information</a></li>
+        <li><a target="_blank" href="https://www.thecubicle.com/collections/gan">Official Website</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

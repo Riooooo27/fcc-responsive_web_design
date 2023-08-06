@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a href="#Introduction_to_Python" class="nav-link">Introduction to Python</a></li>
+        <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <li><a href="#Variable_Scope" class="nav-link">Variable Scope</a></li>
+        <li><a href="#Data_types" class="nav-link">Data types</a></li>
+        <li><a href="#if-else_statement" class="nav-link">if-else statement</a></li>
+        <li><a href="#Loops" class="nav-link">Loops</a></li>
+        <li><a href="#Function" class="nav-link">Function</a></li>
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_Python">
+        <header style="margin-top: 0;">Introduction to Python</header>
+        <article>
+          <p>Python is a popular and versatile high-level programming language known for its simplicity, readability, and elegance. It was created by Guido van Rossum and first released in 1991. Since then, it has gained tremendous popularity among developers, making it one of the most widely used languages in the world.</p>
+          <p>One of Python's primary strengths is its focus on code readability, achieved through the use of a clean and straightforward syntax. This readability allows programmers to express concepts and ideas more concisely and clearly, enhancing collaboration and reducing the time required to write, debug, and maintain code.</p>
+          <p>Another advantage of Python is its extensive standard library, which provides a vast collection of modules and functions for various purposes, such as handling files, network communication, web development, data manipulation, and much more. This rich set of tools simplifies development, as programmers can leverage existing functionalities instead of building everything from scratch.</p>
+          <p>You can also do a lot of things using python, like:</p>
+          <ul>
+            <li>Artificial Intelligence (AI) and Machine Learning (ML)</li>
+            <li>Data Science</li>
+            <li>Scripting and Automation</li>
+            <li>Scientific Computing</li>
+            <li>Big Data and Data Engineering</li>
+          </ul>
+          <p>Overall, Python's simplicity, readability, versatility, and strong community support have contributed to its widespread adoption, making it an excellent choice for both beginners and experienced developers for a broad range of projects and applications.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+          <p>To get you started with python, lets write "Hello World" code:</p>
+          <code>
+            print("Hello, World")
+          </code>
+          <p>Run code above in any code editor you like and it will output this</p>
+          <code>Hello, World</code>
+        </article>
+       
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p> In Python, variables are used to store data values. They act as containers that hold different types of information, such as numbers, text, or objects. Variables allow you to give names to values, making it easier to reference and manipulate them throughout your code.</p>
+          <p>To create a variable in Python, you need to use the assignment operator (=). The variable name is placed on the left side of the = sign, and the value you want to store in the variable is placed on the right side. For example:</p>
+          <code>
+            age = 30 <br>
+            name = "John Doe"
+          </code>
+          <p>Variable names in Python can consist of letters (both uppercase and lowercase), numbers, and underscores. However, they must follow some rules:</p>
+          <ul>
+            <li>The name cannot start with a number.</li>
+            <li>Variable names are case-sensitive (e.g., age and Age are different variables).</li>
+            <li>Avoid using reserved keywords as variable names (e.g., if, while, for, etc.).</li>
+          </ul>
+          <p>You can change the value of a variable after it has been assigned and As Python is dynamically typed, you can assign a different type of value to the same variable:</p>
+          <code>
+            x = 5 <br>
+            print(x)  # Output: 5 <br>
+            <br>
+            x = 10 <br>
+            print(x)  # Output: 10 <br>
+                        <br>
+            x = "Hello" <br>
+            print(x)  # Output: Hello
+          </code>
+          <p>Python also allows you to assign multiple variables in a single line using a technique called "multiple assignment":</p>
+          <code>
+            a, b, c = 1, 2, 3
+          </code>
+        </article>
+        
+      </section>
+
+      <section class="main-section" id="Variable_Scope">
+        <header>Variable Scope</header>
+        <article>
+          <p>In most programming languages, including Python, variables have different scopes, and the scope is determined by where the variable is defined. The two primary types of variable scope are:</p>
+          <ul>
+            <li>
+              <strong>Global Scope:</strong> A variable declared in the global scope is accessible throughout the entire program, including all functions and blocks. It is defined outside any function or block and is available from the point of declaration until the end of the program. Global variables are typically defined at the beginning of the code, outside any functions.
+            </li>
+            <li>
+              <strong>Local Scope:</strong>  A variable declared in the local scope is only accessible within the specific function or block in which it is defined. Once the function or block finishes executing, the variable's scope ends, and the variable is destroyed. Local variables are defined inside functions, loops, or conditional blocks.
+            </li>
+          </ul>
+          <p>Here's a simple example to illustrate variable scope in Python:</p>
+          <code>
+            # Global variable <br>
+            global_var = 10<br>
+            <br>
+            def example_function():<br>
+            &nbsp; # Local variable<br>
+            &nbsp;  local_var = 5<br>
+            &nbsp;  print("Inside the function:", local_var, global_var)<br>
+            &nbsp;  <br>
+            example_function()<br>
+            print("Outside the function:", global_var)<br>
+            <br>
+            # Output:<br>
+            # Inside the function: 5 10<br>
+            # Outside the function: 10<br>
+          </code>
+          <p>In this example, global_var is a global variable because it is defined outside any function. It can be accessed both inside and outside the example_function.</p>
+          <p>On the other hand, local_var is a local variable because it is defined inside the example_function. It can only be accessed within that function and is not available outside of it.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p> In Python, data types define the type of data that can be stored in a variable. Python is a dynamically-typed language, which means you don't need to specify the data type explicitly when declaring a variable. Instead, Python will automatically assign the appropriate data type based on the value you assign to the variable.</p>
+          <p>Here are some common data types in Python:</p>
+          <ul>
+            <li>int : Represents a whole number (-1, 2, 3, 4, etc) </li>
+            <li>float : Represents floating-point numbers (3.14, -0.5, 2.0, etc)</li>
+            <li>complex : Represents complex numbers (1+2j, -3k, etc)</li>
+            <li>str : Represents a strings of characters ('Hello', "Love you", etc)</li>
+            <li>bool : Represents boolean values, which can be either True or False.</li>
+            <li>list : Represents an ordered collection of elements, enclosed in square brackets '[]' ([1, 3, 9])</li>
+            <li>tuple : Similar to lists, but enclosed in parentheses (()), and they are immutable (cannot be changed after creation), e.g., (1, 2, 3).</li>
+            <li>dict : Represents a collection of key-value pairs, enclosed in curly braces "{}", e.g., {"name": "John", "age": 30}.</li>
+            <li>set : Represents an unordered collection of unique elements, enclosed in curly braces "{}", e.g., {1, 2, 3}.</li>
+            <li>None : Represents the absence of a value or a null value. It is often used to indicate the absence of data or as a default value.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="if-else_statement">
+        <header>if-else Statement</header>
+        <article>
+          <p>In Python, the if-else statement is used for conditional execution. It allows you to execute a block of code based on whether a specific condition is true or false. The basic syntax of the if-else statement is as follows:</p>
+          <code>
+            if condition: <br>
+            &nbsp   # Code block executed if the condition is True<br>
+            else:<br>
+            &nbsp  # Code block executed if the condition is False<br>
+          </code>
+          <p>You can also have multiple conditions using elif (short for "else if") statements. The elif statement is used when you have multiple conditions to check, and it comes between the if and else statements. It works like a chain of conditions, and as soon as one condition is true, the corresponding block of code is executed, and the rest of the chain is skipped.</p>
+          <p>Example:</p>
+          <code>
+            x = 7 <br>
+            <br>
+            if x > 10:<br>
+            &nbsp    print("x is greater than 10")<br>
+            elif x > 5:<br>
+            &nbsp   print("x is greater than 5 but not greater than 10")<br>
+            else:<br>
+            &nbsp    print("x is 5 or less")<br>
+          </code>
+          <p>In this example, the second condition x > 5 is true, so the second print statement will be executed, and the else block will be skipped.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+          <p>In Python, loops are used to repeat a block of code multiple times. Python provides two types of loops: for loop and while loop.</p>
+          <ul>
+            <li>For Loop</li>
+            <p>The for loop is used to iterate over a sequence (such as a list, tuple, string, etc.) and execute a block of code for each element in the sequence. Syntax:</p>
+            <code>
+              for element in sequence: <br>
+              &nbsp   # Code block to be executed for each element
+            </code>
+            <p>Example:</p>
+            <code>
+              numbers = [1, 2, 3, 4, 5] <br>
+              for num in numbers: <br>
+              &nbsp  print(num)
+            </code>
+            Output:
+            <code>
+              1 <br>
+              2 <br>
+              3 <br>
+              4 <br>
+              5 <br>
+            </code>
+            <li>While Loop</li>
+            <p>The while loop is used to repeatedly execute a block of code as long as a specified condition is true. Syntax: </p>
+            <code>
+              while condition: <br>
+              &nbsp  # Code block to be executed while the condition is true
+            </code>
+            <p>Example:</p>
+            <code>
+              count = 0 <br>
+              while count < 5: <br>
+              &nbsp    print(count) <br>
+              &nbsp    count += 1 <br>
+            </code>
+            <p>Output:</p>
+            <code>
+              0 <br>
+              1 <br>
+              2 <br>
+              3 <br>
+              4 <br>
+            </code>
+            <p><strong>It's essential to ensure that the condition in a while loop eventually becomes false; otherwise, the loop will run indefinitely, leading to an infinite loop.</strong></p>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Function">
+        <header>Function</header>
+        <article>
+          <p>In Python, a function is a reusable block of code that performs a specific task. Functions are used to break down complex problems into smaller, more manageable pieces, making code more organized, easier to read, and less prone to errors.</p>
+          <p>A function in Python is defined using the 'def' keyword, followed by the function name, parentheses '()', and a colon ':'. Any parameters (inputs) that the function requires are specified inside the parentheses.</p>
+          <p>Here's the basic syntax of a function in Python:</p>
+          <code>
+            def function_name(parameter1, parameter2, ...): <br>
+            &nbsp    # Code block of the function<br>
+            &nbsp    # Perform some operations<br>
+            &nbsp    return result<br>
+          </code>
+          <p>Let's break down the components:</p>
+          <ul>
+            <li><strong>Function Definition : </strong>The def keyword indicates the start of a function definition.</li>
+            <li><strong>Function Name : </strong>The name of the function is user-defined and should follow the same rules as variable names.</li>
+            <li><strong>Parameters (optional) : </strong>These are variables that act as placeholders for the values that will be passed into the function when it's called. Functions can have zero or more parameters, separated by commas.</li>
+            <li><strong>Code Block : </strong>The indented block of code under the function definition represents the body of the function. It contains the instructions or operations the function performs.</li>
+            <li><strong>Return Statement (Optional) : </strong>The return keyword is used to specify the value that the function will return as its result. If no return statement is used, the function will implicitly return None.</li>
+          </ul>
+          <p>Example of a simple function:</p>
+          <code>
+            def greet(name): <br>
+            &nbsp    return 'Hello, ' + name<br>
+            <br>
+            message = greet('Alice')<br>
+            print(message)<br>
+          </code>
+          <p>Output:</p>
+          <code>
+            Hello, Alice
+          </code>
+          <p>In this example, we defined a function named greet that takes one parameter (name). When the function is called with the argument 'Alice', it returns the greeting 'Hello, Alice'. The result is stored in the variable message, and we print it to the console.</p>
+          <p>Functions are fundamental building blocks of Python programming. They allow you to modularize your code, promote reusability, and improve the overall organization and structure of your programs.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+          </ul>
+        </article>
+      </section>
+
+    </main>
+  </body>
+</html>

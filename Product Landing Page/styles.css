@@ -1,0 +1,235 @@
+body {
+  font-family: 'Roboto', arial;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-bottom: darkgray solid 2px;
+}
+
+#header ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: darkgray;
+}
+
+#header-img {
+  height: 90px;
+}
+
+main {
+  margin-top: 90px;
+}
+
+form {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+#email {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#submit {
+  background-color: rgb(0, 167, 0);
+  border: rgb(0,167,0) solid 2px;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: white;
+  border: rgb(0,167,0) solid 2px;
+  color: rgb(0, 167, 0);
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 15%;
+}
+
+.feature img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+iframe {
+  margin: auto 10%;
+}
+
+.desc {
+  text-align: left;
+}
+
+#review {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+  margin: 40px;
+}
+
+#pricing h2 {
+  display: block;
+  text-align: center;
+}
+
+.cube-price {
+  max-width: 400px;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.cube-info {
+  margin: 10px;
+}
+
+.cube-price p {
+  text-align: justify;
+}
+
+.cube-price img {
+  height: 200px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.buttons button {
+  background-color: rgb(79, 144, 255);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+#more {
+  border: none;
+  background-color: rgb(199, 199, 199);
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+#more a {
+  color: black;
+  text-decoration: none;
+}
+
+#more:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: rgb(80, 80, 80)
+}
+
+@media only screen and (max-width: 900px) {
+  .feature {
+    margin: auto 5%;
+  }
+
+  iframe {
+    margin: auto 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  iframe {
+    height: 300px;
+    width: 450px;
+  }
+
+  #header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #header ul {
+    margin-bottom: 10px;
+  }
+
+  form {
+    margin-top: 190px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .cube-review {
+    font-size: 10px;
+  }
+
+  #nav-bar li {
+    font-size: 1.5rem;
+  }
+
+  .cube-price {
+    height: auto;
+  }
+
+  .buttons button {
+    font-size: 1.5rem;
+  }
+}
